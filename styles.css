@@ -1,0 +1,92 @@
+body {
+    background-color: #1C1C1C;
+    color: #E6E6FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin-top: 20;
+    font-size: 2em;
+    animation: slideIn 1s ease-out;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.solid-button {
+    background-color: #9756C7;
+    color: #FFFFFF;
+}
+
+.solid-button:hover {
+    background-color: #7F3DB6;
+    transform: scale(1.05);
+}
+
+.outline-button {
+    background-color: transparent;
+    color: #9756C7;
+    border: 2px solid #9756C7;
+}
+
+.outline-button:hover {
+    background-color: #9756C7;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.discord-widget {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
